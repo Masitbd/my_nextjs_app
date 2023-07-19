@@ -6,6 +6,7 @@ import {
     UserOutlined,
     VideoCameraOutlined,
   } from '@ant-design/icons';
+import { useState } from 'react';
 const { Header, Sider, Content } = Layout;
 const DashboardLayout = ({children}) => {
   const [collapsed, setCollapsed] = useState(false);
@@ -63,6 +64,7 @@ const DashboardLayout = ({children}) => {
             padding: 24,
             minHeight: 280,
             background: colorBgContainer,
+            minHeight: '100vh'
           }}
         >
          {children}

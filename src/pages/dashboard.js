@@ -1,16 +1,17 @@
 import React from 'react';
 import DashboardLayout from '../../components/layout/DashboardLayout';
 
-const Admin = () => {
+const Dashboard = () => {
     return (
         <div>
-           This is admin page 
+           dashboard home page
         </div>
     );
 };
 
-export default Admin;
-Admin.getLayout = function getLayout(page){
+export default Dashboard;
+
+Dashboard.getLayout = function getLayout(page){
     return(
         <DashboardLayout>{page}</DashboardLayout>
     )
